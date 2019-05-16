@@ -1,0 +1,48 @@
+.x4-column
+  display: flex
+  flex-direction: column
+  flex-shrink: 0
+
+  &.x4-no-sort > .x4-head-line
+    cursor: default
+
+  &.x4-align-left
+    .x4-head-line, .x4-coin-line
+      align-items: flex-start
+
+  &.x4-align-center
+    .x4-head-line, .x4-coin-line
+      align-items: center
+
+  &.x4-align-right
+    .x4-head-line, .x4-coin-line
+      align-items: flex-end
+
+  > .x4-coin-blocks
+    display: flex
+    flex-direction: column
+
+    > .x4-coin-block
+      display: flex
+      flex-direction: column
+
+      > .x4-zebra-line
+        left: 0
+        position: absolute
+        right: 0
+        z-index: 0
+
+  &.x4-column-rank:first-child
+    .x4-head-line > .x4-value, .x4-coin-line > .x4-value
+      margin-left: 16px
+      margin-right: 16px
+
+  &.x4-column-name
+    flex-grow: 1
+
+    .x4-coin-line > .x4-value > .x4-icon
+      height: 25px
+      width: 25px
+
+  &.x4-column-actions .x4-coin-line
+    z-index: 4

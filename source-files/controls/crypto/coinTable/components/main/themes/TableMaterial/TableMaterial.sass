@@ -1,0 +1,53 @@
+.x4-coin-table
+  color: $color(primary)
+  font-family: 'Roboto',sans-serif
+  font-size: 13px
+  font-weight: 400
+  line-height: 1.5
+
+  &.x4-body-back.x4-header-back > .x4-columns > .x4-column
+    background-color: $color(inverted)
+
+  &.x4-body-back:not(.x4-header-back) .x4-coin-blocks
+    background-color: $color(inverted)
+
+  &.x4-hover-back .x4-hover-line:hover
+    background-color: $color(primary, .04)
+
+  &.x4-zebra-even.x4-hover-back .x4-coin-block:nth-child(odd) .x4-hover-line:hover
+    background-color: $color(primary, .08)
+
+  &.x4-zebra-odd.x4-hover-back .x4-coin-block:nth-child(even) .x4-hover-line:hover
+    background-color: $color(primary, .08)
+
+  &.x4-sort-back .x4-sort-active
+
+    .x4-head-line
+      background-color: $color(primary, .04)
+
+    .x4-coin-line
+      background-color: $color(primary, .02)
+
+  &.x4-zebra-even .x4-coin-block:nth-child(even) .x4-zebra-line
+    background-color: $color(primary, .04)
+
+  &.x4-zebra-odd .x4-coin-block:nth-child(odd) .x4-zebra-line
+    background-color: $color(primary, .04)
+
+  &.x4-hgrid .x4-coin-line
+    border-bottom: 1px solid $color(primary, .08)
+
+  &.x4-hgrid .x4-popup-line
+    border-bottom: 1px solid $color(primary, .08)
+
+  &.x4-hgrid.x4-table-border .x4-coin-block:last-child .x4-coin-line
+    border-bottom: 0
+
+  &.x4-vgrid
+
+    .x4-head-line, .x4-coin-line
+      border-right: 1px solid $color(primary, .08)
+
+    > .x4-columns > .x4-column:last-child
+      .x4-head-line, .x4-coin-line
+        border-right: 0

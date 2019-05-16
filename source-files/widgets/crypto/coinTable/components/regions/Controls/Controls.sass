@@ -1,0 +1,30 @@
+.x4-controls
+  display: flex
+
+  &.x4-medium
+    flex-wrap: wrap
+
+  > .x4-fiat-select
+    flex-basis: 180px
+
+  > .x4-fiat-select + .x4-per-page-select
+    margin-left: 24px
+
+  &.x4-medium > .x4-fiat-select
+    flex-basis: 48%
+
+  > .x4-per-page-select
+    flex-basis: 180px
+
+  &.x4-medium > .x4-per-page-select
+    flex-basis: 48%
+    margin-left: auto
+
+  > .x4-search-input
+    margin-left: auto
+    flex-basis: 280px
+
+  &.x4-medium > .x4-search-input
+    flex-basis: 100%
+    margin-top: 16px
+    margin-left: 0

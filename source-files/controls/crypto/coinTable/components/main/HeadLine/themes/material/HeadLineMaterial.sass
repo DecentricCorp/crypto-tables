@@ -1,0 +1,24 @@
+.x4-head-line
+  flex-basis: 56px
+  position: relative
+
+  > .x4-value
+
+    > .x4-title
+      font-weight: 500
+      text-transform: uppercase
+
+    > .x4-sort
+      color: $color(primary, .38)
+      font-size: 16px
+      margin-top: -1px
+      opacity: 0
+
+      &.x4-sort-left
+        margin-right: 4px
+
+      &.x4-sort-right
+        margin-left: 4px
+
+  &:hover > .x4-value > .x4-sort
+    opacity: 1

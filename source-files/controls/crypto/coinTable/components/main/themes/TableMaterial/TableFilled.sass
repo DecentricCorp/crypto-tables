@@ -1,0 +1,25 @@
+.x4-coin-table
+  border-top-left-radius: 4px
+  border-top-right-radius: 4px
+
+  &.x4-sort-back .x4-sort-active .x4-head-line
+    background-color: $color(primary, .08)
+
+  &.x4-table-border
+    border-bottom-left-radius: 4px
+    border-bottom-right-radius: 4px
+
+    > .x4-columns > .x4-column:first-child .x4-coin-block
+      border-left: 1px solid $color(primary, .08)
+
+    > .x4-columns > .x4-column:last-child .x4-coin-block
+      border-right: 1px solid $color(primary, .08)
+
+    .x4-coin-block:last-child
+      border-bottom: 1px solid $color(primary, .08)
+
+    > .x4-columns > .x4-column:first-child .x4-coin-block:last-child
+      border-bottom-left-radius: 4px
+
+    > .x4-columns > .x4-column:last-child .x4-coin-block:last-child
+      border-bottom-right-radius: 4px
